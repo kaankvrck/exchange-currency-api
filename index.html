@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaan KIVIRCIK | Exchange-Currency</title>
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/514034c92a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container" style="margin-top:20px;">
+        <div class="card row col-md-12">
+            <div class="card-header">
+                <span class="card-title">KIVIRCIK Currency</span>
+            </div>
+            <div class="card-body">
+                <form id="currency-form">
+                    <div class="card row">
+                        <div class="input-field col-md-12">
+                            <hr>
+                            <input type="number" name="amount" id="amount" placeholder="Enter Amount">
+                            <hr>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card row">
+                        <div class="input-field d-flex justify-content-center">
+                            <p class="col-md-4">First Currency</p>
+                            <select id="firstCurrency" class="col-md-2">
+                                <option selected>USD</option>
+                                <option>EUR</option>
+                                <option>JPY</option>
+                                <option>BGN</option>
+                                <option>CZK</option>
+                                <option>DKK</option>
+                                <option>GBP</option>
+                                <option>HUF</option>
+                                <option>PLN</option>
+                                <option>RON</option>
+                                <option>SEK</option>
+                                <option>CHF</option>
+                                <option>ISK</option>
+                                <option>NOK</option>
+                                <option>HRK</option>
+                                <option>RUB</option>
+                                <option>TRY</option>
+                                <option>AUD</option>
+                                <option>BRL</option>
+                                <option>CAD</option>
+                                <option>CNY</option>
+                                <option>HKD</option>
+                                <option>IDR</option>
+                                <option>ILS</option>
+                                <option>INR</option>
+                                <option>KRW</option>
+                                <option>MXN</option>
+                                <option>MYR</option>
+                                <option>NZD</option>
+                                <option>PHP</option>
+                                <option>SGD</option>
+                                <option>THB</option>
+                                <option>ZAR</option>
+                            </select>
+                            <p class="col-md-4">Second Currency</p>
+                            <select id="secondCurrency" class="col-md-2">
+                                <option selected>USD</option>
+                                <option>EUR</option>
+                                <option>JPY</option>
+                                <option>BGN</option>
+                                <option>CZK</option>
+                                <option>DKK</option>
+                                <option>GBP</option>
+                                <option>HUF</option>
+                                <option>PLN</option>
+                                <option>RON</option>
+                                <option>SEK</option>
+                                <option>CHF</option>
+                                <option>ISK</option>
+                                <option>NOK</option>
+                                <option>HRK</option>
+                                <option>RUB</option>
+                                <option>TRY</option>
+                                <option>AUD</option>
+                                <option>BRL</option>
+                                <option>CAD</option>
+                                <option>CNY</option>
+                                <option>HKD</option>
+                                <option>IDR</option>
+                                <option>ILS</option>
+                                <option>INR</option>
+                                <option>KRW</option>
+                                <option>MXN</option>
+                                <option>MYR</option>
+                                <option>NZD</option>
+                                <option>PHP</option>
+                                <option>SGD</option>
+                                <option>THB</option>
+                                <option>ZAR</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card row">
+                        <div class="card-header">
+                            <span class="card-title" id="outputFirst">USD</span>
+                            <span>-</span>
+                            <span class="card-title" id="outputSecond">USD</span>
+                        </div>
+                        <div class="card-body">
+                            <hr>
+
+                            <input type="text" name="outputResult" id="outputResult" placeholder="Currency Value"
+                                readonly>
+                            <hr>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="currency.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
